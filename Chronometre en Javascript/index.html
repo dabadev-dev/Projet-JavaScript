@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronomètre</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Momo+Signature&family=Playwrite+DK+Uloopet+Guides&display=swap');
+</style>
+</head>
+<body class="bg-green-700 flex items-center justify-center h-screen">
+    <div class="chronometre bg-white p-10 rounded-lg shadow-lg text-center w-[400px]">
+        <div class="time border rounded-lg border-gray-300 text-xl font-semibold p-2 mb-5">
+            <span style=" font-family: Dancing Script, cursive;">00h</span> :
+            <span style=" font-family: Dancing Script, cursive;">00min</span> :
+            <span style=" font-family: Dancing Script, cursive;">00s</span> :
+            <span style=" font-family: Dancing Script, cursive;" >00ms</span>
+        </div>
+        <div class="controls justify-between flex">
+            <button id="start" onclick="start()" class="bg-green-600 hover:bg-green-700 hover:scale-105 text-white font-bold py-2 px-6 rounded">Start</button>
+            <button id="stop" onclick="stop()" class="bg-green-600 hover:bg-green-700 hover:scale-105 text-white font-bold py-2 px-6 rounded">Stop</button>
+            <button id="reset" onclick="reset()" class="bg-green-600 hover:bg-green-700 hover:scale-105 text-white font-bold px-6 py-2 rounded">Reset</button>
+        </div>
+    </div>
+</body>
+</html>
